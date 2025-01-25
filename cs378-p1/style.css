@@ -18,27 +18,28 @@ body {
 }
 
 /* Header Section */
-.header {
-  display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Center items horizontally */
-  gap: 10px; /* Add space between the logo and the title */
-  margin-bottom: 20px;
-  width: 100%; /* Ensure the header takes the full width */
-}
 
 .logo {
   max-width: 80px; /* Adjust size of the logo */
   height: auto;
   border-radius: 10px;
 }
+.header {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Horizontally center the items */
+  gap: 10px; /* Add space between the logo and the title */
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the header takes the full width of the container */
+}
 
 .title {
-  font-size: 1.5rem; /* Size of the title text */
+  font-size: 1.5rem;
   color: #333;
   font-weight: bold;
-  flex-grow: 1; /* Optional: Makes the title take available space if needed */
+  /* Removed flex-grow: 1 to prevent the title from taking up extra space */
 }
+
 
 
 /* Slogan Styling */
