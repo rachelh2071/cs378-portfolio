@@ -58,6 +58,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
+  flex-wrap: nowrap; /* Ensure items stay side-by-side, no wrapping */
 }
 
 .menu-item img {
@@ -114,7 +115,8 @@ body {
   }
 
   .menu-item {
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap; /* Keep it side-by-side even on smaller screens */
+    justify-content: space-between; /* Allow items to fit within the space */
   }
 
   .menu-item img {
@@ -123,7 +125,7 @@ body {
   }
 
   .menu-item .details {
-    width: 100%;
+    width: auto; /* Let the details take up as much space as needed */
   }
 
   .menu-item button {
