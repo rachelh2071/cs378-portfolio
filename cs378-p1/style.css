@@ -20,22 +20,25 @@ body {
 /* Header Section */
 .header {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Align items horizontally */
+  gap: 10px; /* Add space between the logo and the title */
   margin-bottom: 20px;
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 80px; /* Adjust size of the logo */
   height: auto;
   border-radius: 10px;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Size of the title text */
   color: #333;
   font-weight: bold;
+  flex-grow: 1; /* Optional: Makes the title take available space if needed */
 }
+
 
 /* Slogan Styling */
 .slogan {
