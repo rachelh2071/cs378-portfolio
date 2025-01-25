@@ -13,18 +13,16 @@ body {
 }
 
 .container {
-  max-width: 480px; /* Keep this if you want the container to have a max width */
-  margin: 0 auto; /* This centers the container */
-  text-align: center; /* This will also center any inline-block content */
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 /* Logo Styling */
 .logo {
-  display: block; /* Ensure it's treated as a block-level element */
+  display: block;
   max-width: 100%;
   height: auto;
-  margin-left: auto; /* Align left */
-  margin-right: auto; /* Align right */
+  margin: 0 auto;
   border-radius: 10px;
 }
 
