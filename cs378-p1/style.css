@@ -21,7 +21,7 @@ body {
 /* Logo Styling */
 .logo {
   display: block;
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 10px;
@@ -51,14 +51,13 @@ body {
 
 .menu-item {
   display: flex;
-  align-items: flex-start; /* Align text to the top */
+  align-items: center;
   margin-bottom: 20px;
   padding: 10px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  flex-wrap: wrap; /* Allow wrapping of content for mobile */
 }
 
 .menu-item img {
@@ -115,19 +114,16 @@ body {
   }
 
   .menu-item {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
   .menu-item img {
-    width: 60px;
-    height: 60px;
-    margin-right: 0;
-    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
   }
 
   .menu-item .details {
-    width: 100%; /* Full width for details on smaller screens */
+    width: 100%;
   }
 
   .menu-item button {
