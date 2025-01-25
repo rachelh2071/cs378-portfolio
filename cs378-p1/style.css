@@ -17,14 +17,14 @@ body {
   margin: 0 auto;
 }
 
-
-
+/* Logo Styling */
 .logo {
-  max-width: 80px; /* Adjust size of the logo */
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin: 0 auto;
   border-radius: 10px;
 }
-
 
 /* Slogan Styling */
 .slogan {
@@ -59,9 +59,8 @@ body {
 }
 
 .menu-item img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
   margin-right: 10px;
 }
