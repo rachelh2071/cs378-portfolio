@@ -10,12 +10,14 @@ body {
   background-color: #f9f9f9;
   color: #333;
   padding: 10px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
-  max-width: 480px;
+  max-width: 100%; /* Ensure container doesn't exceed screen size */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; /* Adjust padding for smaller screens */
+  box-sizing: border-box;
 }
 
 /* Logo Styling */
@@ -58,7 +60,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  flex-wrap: nowrap; /* Ensure items stay side-by-side, no wrapping */
+  flex-wrap: nowrap; /* Ensure items stay side-by-side */
+  width: 100%; /* Ensure no overflow */
 }
 
 .menu-item img {
@@ -112,10 +115,11 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
+    padding: 0 10px; /* Slightly reduce padding for mobile screens */
   }
 
   .menu-item {
-    flex-wrap: nowrap; /* Keep it side-by-side even on smaller screens */
+    flex-wrap: nowrap; /* Keep it side-by-side */
     justify-content: space-between; /* Allow items to fit within the space */
   }
 
@@ -135,6 +139,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  body {
+    padding: 0 5px; /* Reduce padding further for very small screens */
+  }
+
   .slogan .primary {
     font-size: 1.25rem;
   }
