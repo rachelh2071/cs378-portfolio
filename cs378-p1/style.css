@@ -15,6 +15,7 @@ body {
 .container {
   max-width: 480px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Logo Styling */
@@ -50,12 +51,14 @@ body {
 
 .menu-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align text to the top */
   margin-bottom: 20px;
   padding: 10px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex-wrap: wrap; /* Allow wrapping of content for mobile */
 }
 
 .menu-item img {
@@ -63,37 +66,12 @@ body {
   height: 80px;
   border-radius: 10px;
   margin-right: 10px;
+  flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .menu-item .details {
   flex: 1;
-}
-
-/* Menu Section */
-.menu {
-  margin-top: 20px;
-}
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 10px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Ensure left alignment of text */
-}
-
-.menu-item img {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  margin-right: 10px;
-}
-
-.menu-item .details {
-  flex: 1;
+  min-width: 150px; /* Ensure there's space for the details */
 }
 
 .menu-item .details .title {
@@ -114,7 +92,6 @@ body {
   color: #d9534f;
 }
 
-
 /* Button Styling */
 .menu-item button {
   padding: 10px;
@@ -129,4 +106,50 @@ body {
 
 .menu-item button:hover {
   background-color: #4cae4c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu-item .details {
+    width: 100%; /* Full width for details on smaller screens */
+  }
+
+  .menu-item button {
+    align-self: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slogan .primary {
+    font-size: 1.25rem;
+  }
+
+  .slogan .secondary {
+    font-size: 0.875rem;
+  }
+
+  .menu-item .details .title {
+    font-size: 0.9rem;
+  }
+
+  .menu-item .details .price {
+    font-size: 0.85rem;
+  }
 }
