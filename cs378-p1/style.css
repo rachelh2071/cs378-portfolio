@@ -19,12 +19,11 @@ body {
 
 /* Logo Styling */
 .logo {
-  display: block; /* Ensure it's treated as a block-level element */
-  max-width: 100%; /* Keep the logo responsive */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: auto; /* Align left */
-  margin-right: auto; /* Align right */
-  border-radius: 10px; /* Optional: rounded corners */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 /* Slogan Styling */
