@@ -69,6 +69,33 @@ body {
   flex: 1;
 }
 
+/* Menu Section */
+.menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ensure left alignment of text */
+}
+
+.menu-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.menu-item .details {
+  flex: 1;
+}
+
 .menu-item .details .title {
   font-weight: bold;
   font-size: 1rem;
@@ -86,6 +113,7 @@ body {
   font-weight: bold;
   color: #d9534f;
 }
+
 
 /* Button Styling */
 .menu-item button {
