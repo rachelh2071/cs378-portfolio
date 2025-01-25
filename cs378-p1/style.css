@@ -17,29 +17,13 @@ body {
   margin: 0 auto;
 }
 
-/* Header Section */
+
 
 .logo {
   max-width: 80px; /* Adjust size of the logo */
   height: auto;
   border-radius: 10px;
 }
-.header {
-  display: flex;
-  align-items: center; /* Vertically center the items */
-  justify-content: center; /* Horizontally center the items */
-  gap: 10px; /* Add space between the logo and the title */
-  margin-bottom: 20px;
-  width: 100%; /* Ensure the header takes the full width of the container */
-}
-
-.title {
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: bold;
-  /* Removed flex-grow: 1 to prevent the title from taking up extra space */
-}
-
 
 
 /* Slogan Styling */
