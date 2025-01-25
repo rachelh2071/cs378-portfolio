@@ -19,11 +19,10 @@ body {
 
 /* Logo Styling */
 .logo {
-  display: block;
-  max-width: 100%;
+  max-width: 150px;
   height: auto;
+  display: block;
   margin: 0 auto;
-  border-radius: 10px;
 }
 
 /* Slogan Styling */
